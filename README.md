@@ -73,3 +73,48 @@ console.log(operate(5,3, subtractFunc));
 //output: 8
 //output: 2
 ```
+
+### Generator Function
+A function that allows pausing & resuming its execution, often used for managing sequence
+```
+function* countToFive() {
+  for(let i=1; i<=5; i++) {
+    yield i;
+  }
+}
+
+const generator = countToFive();
+for(const num of generator) {
+  console.log(num);
+}
+
+//output
+1
+2
+3
+4
+5
+```
+
+### Constructor Function
+A function used to create objects with shared properties and methods when invoked with new
+```
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const person1 = new Person("Alice", 30);
+const person2 = new Person("Bob", 25);
+
+console.log(person1.name);
+console.log(person1.age);
+console.log(person2.name);
+console.log(person2.age);
+
+//output
+Alice
+30
+Bob
+25
+```
