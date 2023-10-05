@@ -58,3 +58,18 @@ fetchData((result) => {
 ```
 
 ### Higher Order Function
+Functions that takes other functions as argument
+```
+function operate(a, b, operation) {
+  return operation(a, b);
+}
+
+const addFunc = (x, y) => x+y;
+const subtractFunc = (x,y) => x-y;
+
+console.log(operate(5,3, addFunc));
+console.log(operate(5,3, subtractFunc));
+
+//output: 8
+//output: 2
+```
