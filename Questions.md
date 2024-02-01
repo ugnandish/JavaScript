@@ -55,7 +55,7 @@
 <h3><strong>Q1: Is Javascript single-threaded?</strong></h3>
 <h3><strong>Q2: Explain the main component of the javascript engine & how it works</strong></h3>
 <h3><strong>Q3: Difference between var, let and const</strong></h3>
-<h3>Q: Explain Hoisting in javascrip</h3>
+<h3>Q: Explain Hoisting in javascript</h3>
 <p>Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.</p>
 <p>This means that irrespective of where the variables and functions are declared, they are moved on top of the scope. The scope can be both local and global.</p>
 
